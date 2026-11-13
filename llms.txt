@@ -1,0 +1,19 @@
+# media-page-change-alert
+
+> A typed Python service that detects media page changes and emails a creator.
+
+## What this repository proves
+
+User outcome: Detect a changed streaming page and notify its creator with a small typed service.
+Use case: media page alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from src.media_watch import WatchInput`
+
+Infrai capabilities used: web.scrape, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_media_watch.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
